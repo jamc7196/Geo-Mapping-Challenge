@@ -1,7 +1,7 @@
 //student: Jorge Alberto Muñozcano Castro
 // Leafleft-Challenge
 //1) define variable with the usgs url
-var earhtquakeUrl = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson"
+var earthquakeUrl = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson"
 //2) Used d3 and extract the json data from the url
 d3.json(earthquakeUrl, function(data) {
   createFeatures(data.features);
