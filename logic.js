@@ -99,7 +99,7 @@ function createMap(earthquakesdata) {
       37.09, -95.71
     ],
     zoom: 4,
-    layers: [map1, earthquakesdata, faultLine]
+    layers: [map1, earthquakesdata, faultline]
   });
 
   // Create a layer control
