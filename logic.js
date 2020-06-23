@@ -1,9 +1,9 @@
 //student: Jorge Alberto Muñozcano Castro
 // Leafleft-Challenge
 //1) define variable with the usgs url
-var earthquakeUrl = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson"
+var EQUrl = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson"
 //2) Used d3 and extract the json data from the url
-d3.json(earthquakeUrl, function(data) {
+d3.json(EQUrl, function(data) {
   createFeatures(data.features);
   console.log(data.features)
 });
@@ -142,7 +142,7 @@ function createMap(earthquakesdata) {
               mags[i] + (mags[i + 1] ? '&ndash;' + mags[i + 1] + '<br>' : '+');
       }
   
-      return div;
+      return divlegend;
   };
   
   maplegend.addTo(myMap);
