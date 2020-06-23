@@ -78,7 +78,7 @@ function createMap(earthquakesdata) {
   });
 
   // Create the faultline layer
-  var faultLine = new L.LayerGroup();
+  var faultline = new L.LayerGroup();
   
   // Define a baseMaps object to hold our base layers
   var EQMaps = {
@@ -90,7 +90,7 @@ function createMap(earthquakesdata) {
   // Create overlay object to hold our overlay layer
   var overlayEQ = {
     Earthquakes: earthquakesdata,
-    FaultLines: faultLine
+    FaultLines: faultline
   };
 
   // Create our map, giving it the streetmap and earthquakes layers to display on load
@@ -118,7 +118,7 @@ function createMap(earthquakesdata) {
       style: function() {
         return {color: "orange", fillOpacity: 0}
       }
-    }).addTo(EQfaultLine)
+    }).addTo(faultline)
   })
 
   // color function to be used when creating the legend
