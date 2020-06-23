@@ -116,7 +116,7 @@ function createMap(earthquakesdata) {
   d3.json(EQfaultline, function(data) {
     L.geoJSON(data, {
       style: function() {
-        return {color: "orange", fillOpacity: 0}
+        return {color: "black", fillOpacity: 0}
       }
     }).addTo(faultline)
   })
