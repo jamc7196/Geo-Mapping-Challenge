@@ -1,5 +1,8 @@
 # Leaflet Homework - Visualizing Data with Leaflet
 
+Note: to vizualize this challenge please access the following link:
+https://jamc7196.github.io/Geo-Mapping-Challenge/index.html
+
 ## Background
 
 ![1-Logo](Images/1-Logo.png)
